@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Agenda — Vedika, Let's Hang Out</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="hearts-container" id="hearts"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-brand">Vedika ♥</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="why.html">Why Me?</a></li>
+      <li><a href="activities.html" class="active">The Agenda</a></li>
+      <li><a href="date.html" class="btn btn-primary">The Big Ask →</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="page-hero page-hero-short">
+    <div class="page-hero-bg" style="background-image: url('delhi.jpg');"></div>
+    <div class="page-hero-content">
+      <p class="eyebrow">Official Irade &amp; Agenda — subject to chai availability</p>
+      <h1>Six Things We Could<br><em style="color:var(--text);">Actually, Genuinely Do</em></h1>
+      <p class="hero-sub">Sorted by vibe. Not by probability. All negotiable except the chai one. That one is non-negotiable.</p>
+    </div>
+  </section>
+
+  <!-- Activities grid -->
+  <section class="section">
+    <div class="grid-3">
+
+      <div class="card reveal" style="--img:url('Bollywood .jpg')">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <h3>Stupid Bollywood Movies</h3>
+          <p>Let's binge everything with IMDB under 5. Achhi yaaden banaake kya hi karna hai — by the end, we'll either hate each other or become fluent in cringe. Both outcomes are acceptable.</p>
+          <span class="card-tag">Chaos Level: ★★★★★</span>
+        </div>
+      </div>
+
+      <div class="card reveal" style="--img:url('bigboss.jpg')">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <h3>Big Boss Marathon</h3>
+          <p>Doosron ke ghar ke kalesh, but make it an event. Popcorn mandatory. Loud opinions even more mandatory. We will find something to fight about within 10 minutes. That is the fun part.</p>
+          <span class="card-tag">Drama Level: ★★★★★</span>
+        </div>
+      </div>
+
+      <div class="card reveal" style="--img:url('delhi.jpg')">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <h3>Explore Delhi</h3>
+          <p>Ghalib ka shahr. Urdu born here, SRK born here, culture layered like Mughal architecture. Kaise maaf kr paogi tum apne aapko if we don't at least find the gali wali chai?</p>
+          <span class="card-tag">Culture Level: ★★★★☆</span>
+        </div>
+      </div>
+
+      <div class="card reveal" style="--img:url('chai.jpg')">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <h3>Chai. Or Coffee. Or Both.</h3>
+          <p>Pleaseeee. Let me be your cup of tea (pickup line, non-negotiable). We find the best cutting chai in Delhi. We debate life. We refill. We repeat. This one has no logical end point. That's the beauty of it.</p>
+          <span class="card-tag">Warmth Level: ★★★★★</span>
+        </div>
+      </div>
+
+      <div class="card reveal" style="--img:url('dil se.jpg')">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <h3>Ek Baar, Dil Se</h3>
+          <p>One viewing. I explain every scene. We discover if you fall in love with it the way I did. Fair warning: I will be emotionally invested. This is not casual movie-watching. Tissues strongly recommended.</p>
+          <span class="card-tag">Emotion Level: ★★★★★</span>
+        </div>
+      </div>
+
+      <div class="card reveal" style="--img:url('stars.jpg')">
+        <div class="card-bg"></div>
+        <div class="card-overlay"></div>
+        <div class="card-body">
+          <h3>Absolutely Nothing</h3>
+          <p>We are allowed to do precisely nothing. Stare at the sky. Count stars until we lose count. Comfortable silence. No phones. No agenda. Just being somewhere, together. Sometimes that's enough.</p>
+          <span class="card-tag">Peace Level: ★★★★★</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:4rem;">
+      <p class="reveal cursive" style="font-size:1.35rem; color:var(--text-light); margin-bottom:1.5rem; animation:none; opacity:1;">
+        Still reading? There's one more page.
+      </p>
+      <a href="date.html" class="btn btn-primary reveal">The Big Ask →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with <span class="heart">♥</span> and way too much chai &nbsp;·&nbsp; For Vedika, obviously.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

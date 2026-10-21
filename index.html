@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hey Vedika — Let's Hang Out</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="hearts-container" id="hearts"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-brand">Vedika ♥</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="why.html">Why Me?</a></li>
+      <li><a href="activities.html">The Agenda</a></li>
+      <li><a href="date.html" class="btn btn-primary">The Big Ask →</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('Hero.jpeg');"></div>
+    <div class="page-hero-content">
+      <p class="eyebrow">A humble proposal from someone with questionable taste in movies</p>
+      <h1>Hey Vedika,<br><span style="color:var(--text);">let's make a story<br>worth telling.</span></h1>
+      <p class="hero-sub">No scripts. No Instagram filters. Just two people, good chai, chaotic Bollywood, and the question of whether we'd survive a Big Boss season together.</p>
+      <div class="hero-cta">
+        <a href="why.html" class="btn btn-primary">Make the Case →</a>
+        <a href="activities.html" class="btn btn-outline">See the Agenda</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">↓</div>
+  </section>
+
+  <!-- Stick Figure Sketch Section -->
+  <section class="sketch-section">
+    <div class="sketch-card notebook-bg reveal">
+      <p class="eyebrow cursive" style="font-size: 1.45rem; color: var(--primary); margin-bottom: 0.3rem;">Visual Proof & Proposal</p>
+      <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--text); margin-bottom: 0.6rem;">Exhibit A: The Stick Figure Blueprint</h2>
+      <p style="color: var(--text-light); max-width: 540px; margin: 0 auto 1.5rem; font-size: 0.98rem; line-height: 1.6;">
+        A 100% accurate, hand-drawn blueprint of me proposing chai & a date to Vedika.
+      </p>
+
+      <!-- SVG Hand Drawn Sketch -->
+      <div class="sketch-wrapper" id="sketchSvgView">
+        <svg viewBox="0 0 600 280" class="stick-figure-svg" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrow-me" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b" />
+            </marker>
+          </defs>
+
+          <!-- Ground Line -->
+          <path d="M 120 230 C 250 232 380 228 500 230" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round" fill="none"/>
+          
+          <!-- CIRCLE & TEXT: "me" -->
+          <ellipse cx="90" cy="175" rx="34" ry="22" fill="none" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="4 2"/>
+          <text x="90" y="183" font-family="'Dancing Script', cursive, sans-serif" font-size="26" font-weight="bold" fill="#c0392b" text-anchor="middle">me</text>
+          
+          <!-- ARROW pointing to kneeling figure -->
+          <path d="M 124 175 Q 155 175 175 165" stroke="#c0392b" stroke-width="2.5" fill="none" marker-end="url(#arrow-me)"/>
+
+          <!-- KNEELING STICK FIGURE ("me") -->
+          <!-- Head -->
+          <circle cx="215" cy="130" r="18" fill="none" stroke="#3d1c1c" stroke-width="3"/>
+          <circle cx="209" cy="126" r="2.5" fill="#3d1c1c"/>
+          <circle cx="221" cy="126" r="2.5" fill="#3d1c1c"/>
+          <path d="M 209 137 Q 215 143 221 137" stroke="#3d1c1c" stroke-width="2" fill="none"/>
+          
+          <!-- Torso -->
+          <path d="M 215 148 L 215 190" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round"/>
+          
+          <!-- Kneeling Leg (front knee bent up) -->
+          <path d="M 215 190 L 238 210 L 238 230" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <!-- Back Leg (knee on ground) -->
+          <path d="M 215 190 L 188 210 L 170 210" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round" fill="none"/>
+          
+          <!-- Extended Arm holding flower -->
+          <path d="M 215 160 L 255 152" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round"/>
+          <!-- Back Arm -->
+          <path d="M 215 160 L 195 175" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round"/>
+          
+          <!-- Flower -->
+          <path d="M 255 152 L 270 142" stroke="#27ae60" stroke-width="2.5"/>
+          <circle cx="273" cy="140" r="4.5" fill="#e74c3c"/>
+          <circle cx="279" cy="137" r="4.5" fill="#e74c3c"/>
+          <circle cx="277" cy="145" r="4.5" fill="#e74c3c"/>
+          <circle cx="269" cy="136" r="4.5" fill="#e74c3c"/>
+          <circle cx="274" cy="139" r="3" fill="#f4c842"/>
+
+          <!-- CIRCLE & TEXT: "VEDIKA" -->
+          <ellipse cx="505" cy="100" rx="60" ry="25" fill="none" stroke="#c0392b" stroke-width="2.5"/>
+          <text x="505" y="108" font-family="'Dancing Script', cursive, sans-serif" font-size="26" font-weight="bold" fill="#c0392b" text-anchor="middle">VEDIKA</text>
+          
+          <!-- ARROW pointing to Vedika -->
+          <path d="M 445 105 Q 425 115 390 115" stroke="#c0392b" stroke-width="2.5" fill="none"/>
+          <polygon points="390,110 378,115 390,120" fill="#c0392b"/>
+
+          <!-- STANDING STICK FIGURE ("VEDIKA") -->
+          <!-- Head -->
+          <circle cx="345" cy="105" r="20" fill="none" stroke="#3d1c1c" stroke-width="3"/>
+          <circle cx="338" cy="101" r="2.5" fill="#3d1c1c"/>
+          <circle cx="352" cy="101" r="2.5" fill="#3d1c1c"/>
+          <path d="M 339 111 Q 345 117 351 111" stroke="#3d1c1c" stroke-width="2" fill="none"/>
+          
+          <!-- Wild Hair matching sketch -->
+          <path d="M 325 105 C 315 85 330 75 345 80 C 360 75 375 85 365 105 M 330 90 C 318 95 315 110 324 120 M 360 90 C 372 95 375 110 366 120 M 345 80 C 347 70 353 75 355 80" stroke="#3d1c1c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          
+          <!-- Torso -->
+          <path d="M 345 125 L 345 185" stroke="#3d1c1c" stroke-width="3"/>
+          <!-- Legs -->
+          <path d="M 345 185 L 336 230" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round"/>
+          <path d="M 345 185 L 354 230" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round"/>
+          <!-- Arms -->
+          <path d="M 345 135 L 322 155" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round"/>
+          <path d="M 345 135 L 368 155" stroke="#3d1c1c" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- Animated Floating Hearts -->
+          <g class="svg-floating-hearts">
+            <text x="295" y="100" font-size="20" fill="#e74c3c">♥</text>
+            <text x="310" y="75" font-size="16" fill="#f4a4a4">💕</text>
+            <text x="280" y="80" font-size="18" fill="#e74c3c">✨</text>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Teaser cards -->
+
+  <section class="section">
+    <div class="section-header reveal">
+      <p class="eyebrow">What's inside</p>
+      <h2>Three good reasons to keep reading</h2>
+      <p>This is a properly built case. Evidence, Bollywood references, and a suspiciously uncooperative No button at the end.</p>
+    </div>
+    <div class="grid-3">
+
+      <a href="why.html" style="text-decoration:none; display:flex;">
+        <div class="card reveal" style="--img:url('rain dance.jpg')">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-body">
+            <h3>Why Me?</h3>
+            <p>Oxytocin, Tony Stark banter, and the promise of becoming Delhi's most chaotic Bollywood duo.</p>
+            <span class="card-tag">Read the argument →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="activities.html" style="text-decoration:none; display:flex;">
+        <div class="card reveal" style="--img:url('delhi.jpg')">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-body">
+            <h3>The Agenda</h3>
+            <p>Six plans. From "explore Ghalib's Delhi" to "do absolutely nothing." All equally valid. All requiring chai.</p>
+            <span class="card-tag">See what we'd do →</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="date.html" style="text-decoration:none; display:flex;">
+        <div class="card reveal" style="--img:url('stars.jpg')">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-body">
+            <h3>The Big Ask</h3>
+            <p>One question. One answer. And a No button that has already decided to be deeply uncooperative.</p>
+            <span class="card-tag">Find out →</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Quote banner -->
+  <section class="section section-alt">
+    <div style="max-width:680px; margin:0 auto; text-align:center;" class="reveal">
+      <p style="font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1.3rem,3vw,2rem); color:var(--primary); line-height:1.6; margin-bottom:1.5rem;">
+        "Zindagi badi honi chahiye, lambi nahin."
+      </p>
+      <p style="color:var(--text-light); font-size:0.9rem; letter-spacing:1px; text-transform:uppercase; font-weight:700;">— Anand, 1971</p>
+      <p style="color:var(--text-light); margin-top:1.5rem; font-size:1rem; line-height:1.8;">
+        Life should be big, not just long. We could be making memories right now instead of you reading a website. Just saying.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with <span class="heart">♥</span> and way too much chai &nbsp;·&nbsp; For Vedika, obviously.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
